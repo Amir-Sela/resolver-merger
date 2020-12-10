@@ -1,0 +1,11 @@
+const {
+    newsItemResolver,
+    newsItemDraftResolver,
+} = require('../resolvers/newsItemResolvers')
+
+module.exports = {
+    newsItemQuery: {
+        getNewsItem: newsItemResolver,
+        getNewsItemDraft: newsItemDraftResolver
+    }
+}
